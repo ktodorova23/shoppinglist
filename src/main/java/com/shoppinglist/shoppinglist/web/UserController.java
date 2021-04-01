@@ -88,6 +88,13 @@ public class UserController {
         httpSession.setAttribute("user", userServiceModel);
 
         return "redirect:/";
+    }
 
+    //TODO fix it
+    @GetMapping("/logout")
+    public String logout(HttpSession httpSession) {
+        httpSession.invalidate();
+
+        return "redirect:/";
     }
 }
