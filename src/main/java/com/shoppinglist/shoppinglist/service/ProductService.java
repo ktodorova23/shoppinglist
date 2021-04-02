@@ -14,4 +14,8 @@ public interface ProductService {
 
     //TODO Тук е правилно да връща ProductServiceModel и на следващото ниво, в Service-а да го map-нем към view model!!!
     List<ProductViewModel> findAllProductsByCategoryName(CategoryName categoryName);
+
+    void buyById(String id);
+
+    void buyAll();
 }
